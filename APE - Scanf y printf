@@ -1,0 +1,33 @@
+#include <stdio.h> // Libreria para pode usar las funciones de  printf y scanf
+
+int main() {
+    // Declaración de los diferentes tipos de variables
+    int ent; // Se declara la variable con nombre "ent" como entero
+    float flo; // Se declara la variable con nombre "flo" como flotante
+    char car; // Se declara la variable con nombre "car" como caracter
+
+    // Presentacion del mensaje de bienvenida
+    printf("Hola, Bienvenido a este programa\n");
+    
+        // Se pedira al usuario que ingrese los valores para los diferentes tipos de variables
+        printf("Ingrese un numero entero: ");
+        scanf("%d", &ent);
+
+        printf("Ingrese un numero decimal: ");
+        scanf("%f", &flo);
+
+        printf("Ingrese un caracter: ");
+        scanf(" %c", &car); // Espacio en blanco antes de %c para ignorar el carácter de nueva línea anterior
+
+        // Salida de los datos junto a un mensaje que describe lo que es cada uno de ellos
+        printf("\nLos valores ingresados son los siguientes:\n");
+
+        printf("Numero entero: %d\n", ent);
+
+        printf("Numero decimal: %.2f\n", flo); // Si el usuario ingresa mas de dos decimales solo se mostraran 2
+
+        printf("Caracter: %c\n", car); // Si el usuario ingresa mas un caracter solo se mostrara el primero que se ingrese
+
+
+    return 0;
+}
